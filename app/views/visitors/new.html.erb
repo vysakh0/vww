@@ -1,6 +1,6 @@
 <% content_for :title do %>Foobar Kadigan<% end %>
 <% content_for :description do %>Website of Foobar Kadigan<% end %>
-<img src="http://lorempixel.com/1170/600/cats/1">
+<%= image_tag "woman.jpg" %>
 <div style="text-align: center; margin-top: 20px">
   <div class="span4 offset2">
     <h2>Stay in touch.</h2>
@@ -13,6 +13,7 @@
         <br/>
         <%= f.submit "Sign up for the newsletter", :class => "btn btn-primary"%>
       <% end %>
+      <b>Help line number:</b> 1324344
     </div>
   </div>
 </div>
