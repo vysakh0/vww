@@ -5,7 +5,6 @@ ruby '2.0.0'
 gem 'rails', '4.0.0'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -44,3 +43,31 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem 'activerecord-tableless'
+gem 'bootstrap-sass'
+gem 'figaro'
+gem 'gibbon'
+gem 'high_voltage'
+gem 'protected_attributes'
+gem 'simple_form', '~> 3.0.0.rc'
+
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller', :platforms=>[:mri_19, :rbx]
+  gem 'guard-bundler'
+  gem 'guard-rails'
+  gem 'hub', :require=>nil
+  gem 'quiet_assets'
+  gem 'rb-fchange', :require=>false
+  gem 'rb-fsevent', :require=>false
+  gem 'rb-inotify', :require=>false
+  gem 'sqlite3'
+end
+
+group :production do
+  gem 'pg'
+  gem 'rails_on_heroku'
+  gem 'thin'
+end
+
